@@ -1,0 +1,10 @@
+<form [formGroup]="editorForm">
+  <quill-editor
+
+  [placeholder]="''"
+  [modules]="quillConfiguration"
+  formControlName="content"
+>
+</quill-editor>
+</form>
+<button class="submit" (click)="onSave()">Guardar</button>
